@@ -1,0 +1,44 @@
+footer {
+    background-color: #01252e;
+    color: #fffdfd;
+    position: relative;
+    margin-top: 200px;
+
+    .community {
+        position: absolute;
+        top: -20%;
+        left: 25%;
+    }
+
+    h3 {
+        color: #01252e;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            text-decoration: none;
+
+            a {
+                text-decoration: none;
+                color: #fffdfd;
+            }
+        }
+    }
+
+    .social-media-icon {
+        text-decoration: none;
+        color: #fffdfd;
+
+        span {
+            border: 1px solid #fffdfd;
+            height: 40px;
+            width: 40px;
+            padding: 5px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
