@@ -6262,6 +6262,11 @@ body {
   background-image: url("../../../assets/images/bg-hero-desktop.svg");
   background-color: #ebfbff;
 }
+@media (max-width: 768px) {
+  .intro {
+    background-image: url("../../../assets/images/bg-hero-mobile.svg");
+  }
+}
 .intro header .btn-white {
   background-color: white;
   color: #1c3230;
@@ -6269,7 +6274,8 @@ body {
   padding: 5px 40px;
   font-weight: 700;
 }
-.intro .mockup-img {
+
+.mockup-img {
   max-height: 500px;
   width: 100%;
   object-fit: cover;
