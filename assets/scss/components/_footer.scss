@@ -5,9 +5,16 @@ footer {
     margin-top: 200px;
 
     .community {
+        width: 50%;
         position: absolute;
         top: -20%;
         left: 25%;
+
+        @media (max-width:768px) {
+            width: 75%;
+            top: -15%;
+            left: 12.5%
+        }
     }
 
     h3 {

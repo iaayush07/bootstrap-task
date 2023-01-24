@@ -1,5 +1,5 @@
 .intro {
-    height: 70%;
+    // height: 70%;
     background-image: url("../../../assets/images/bg-hero-desktop.svg");
     background-color: #ebfbff;
 
@@ -20,18 +20,36 @@
 
 }
 
-.mockup-img {
-    max-height: 500px;
-    width: 100%;
-    object-fit: cover;
+.mockup-wrapper {
+    height: 450px;
+
+    @media (max-width:768px) {
+        height: 300px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    // display: flex;
+    // flex-grow: 1;
+
+    .mockup-img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
 }
 
 
 .detail-wrapper {
 
     h2 {
-        max-width: 60%;
         font-weight: 700;
         line-height: 1.4;
+
+        span::before {
+            content: "\A";
+            white-space: pre;
+        }
     }
 }

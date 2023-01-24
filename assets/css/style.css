@@ -6258,7 +6258,6 @@ body {
 }
 
 .intro {
-  height: 70%;
   background-image: url("../../../assets/images/bg-hero-desktop.svg");
   background-color: #ebfbff;
 }
@@ -6275,26 +6274,42 @@ body {
   font-weight: 700;
 }
 
-.mockup-img {
-  max-height: 500px;
-  width: 100%;
+.mockup-wrapper {
+  height: 450px;
+}
+@media (max-width: 768px) {
+  .mockup-wrapper {
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.mockup-wrapper .mockup-img {
+  max-height: 100%;
+  max-width: 100%;
   object-fit: cover;
 }
 
 .detail-wrapper h2 {
-  max-width: 60%;
   font-weight: 700;
   line-height: 1.4;
+}
+.detail-wrapper h2 span::before {
+  content: "\a";
+  white-space: pre;
 }
 
 main {
   margin: 100px 25px;
 }
-main img {
-  max-width: 500px;
+main .img-wrapper {
+  width: 50%;
 }
-main .ps-100 {
-  padding-left: 100px;
+main .img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px;
 }
 
 footer {
@@ -6304,9 +6319,17 @@ footer {
   margin-top: 200px;
 }
 footer .community {
+  width: 50%;
   position: absolute;
   top: -20%;
   left: 25%;
+}
+@media (max-width: 768px) {
+  footer .community {
+    width: 75%;
+    top: -15%;
+    left: 12.5%;
+  }
 }
 footer h3 {
   color: #01252e;
