@@ -8,6 +8,13 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "Open sans";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins";
 }
 
 :root {
@@ -6265,6 +6272,11 @@ progress {
   padding: 5px 40px;
   font-weight: 700;
 }
+@media (max-width: 320px) {
+  .intro header .btn-white {
+    padding: 5px 12px;
+  }
+}
 @media (max-width: 425px) {
   .intro header img {
     height: 25px;
@@ -6285,6 +6297,11 @@ progress {
 @media (max-width: 375px) {
   .mockup-wrapper {
     height: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .mockup-wrapper {
+    height: 200px;
   }
 }
 .mockup-wrapper .mockup-img {
@@ -6346,14 +6363,14 @@ footer .community {
 @media (max-width: 425px) {
   footer .community {
     width: 90%;
-    top: -15%;
+    top: -20%;
     left: 5%;
   }
 }
 @media (max-width: 375px) {
   footer .community {
     width: 95%;
-    top: -15%;
+    top: -20%;
     left: 2.5%;
   }
 }

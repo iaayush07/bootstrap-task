@@ -13,6 +13,10 @@
             color: $secondary;
             padding: 5px 40px;
             font-weight: 700;
+
+            @media (max-width:320px) {
+                padding: 5px 12px;
+            }
         }
 
         img {
@@ -37,6 +41,10 @@
 
     @media (max-width:375px) {
         height: 250px;
+    }
+
+    @media (max-width:320px) {
+        height: 200px;
     }
 
     .mockup-img {
