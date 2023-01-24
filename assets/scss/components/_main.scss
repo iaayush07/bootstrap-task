@@ -4,6 +4,10 @@ main {
     .img-wrapper {
         width: 50%;
 
+        @media (max-width:425px) {
+            width: 100%;
+        }
+
         img {
             max-width: 100%;
             max-height: 100%;

@@ -1,6 +1,6 @@
 footer {
-    background-color: #01252e;
-    color: #fffdfd;
+    background-color: $secondary;
+    color: $white;
     position: relative;
     margin-top: 200px;
 
@@ -15,10 +15,22 @@ footer {
             top: -15%;
             left: 12.5%
         }
+
+        @media (max-width:425px) {
+            width: 90%;
+            top: -15%;
+            left: 5%
+        }
+
+        @media (max-width:375px) {
+            width: 95%;
+            top: -15%;
+            left: 2.5%
+        }
     }
 
     h3 {
-        color: #01252e;
+        color: $secondary;
     }
 
     ul {
@@ -28,17 +40,17 @@ footer {
 
             a {
                 text-decoration: none;
-                color: #fffdfd;
+                color: $white;
             }
         }
     }
 
     .social-media-icon {
         text-decoration: none;
-        color: #fffdfd;
+        color: $white;
 
         span {
-            border: 1px solid #fffdfd;
+            border: 1px solid $white;
             height: 40px;
             width: 40px;
             padding: 5px;

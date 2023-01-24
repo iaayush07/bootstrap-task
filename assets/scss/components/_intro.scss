@@ -1,19 +1,24 @@
 .intro {
     // height: 70%;
-    background-image: url("../../../assets/images/bg-hero-desktop.svg");
+    background-image: url("./../../assets/images/bg-hero-desktop.svg");
     background-color: #ebfbff;
 
     @media (max-width:768px) {
-        background-image: url("../../../assets/images/bg-hero-mobile.svg");
+        background-image: url("./../../assets/images/bg-hero-mobile.svg");
     }
 
     header {
         .btn-white {
             background-color: white;
-            color: #1c3230;
-            border-radius: 18px;
+            color: $secondary;
             padding: 5px 40px;
             font-weight: 700;
+        }
+
+        img {
+            @media (max-width : 425px) {
+                height: 25px;
+            }
         }
     }
 
@@ -30,13 +35,18 @@
         justify-content: center;
     }
 
-    // display: flex;
-    // flex-grow: 1;
+    @media (max-width:375px) {
+        height: 250px;
+    }
 
     .mockup-img {
         max-height: 100%;
         max-width: 100%;
         object-fit: cover;
+
+        @media (max-width:425px) {
+            max-width: 120%;
+        }
     }
 }
 
